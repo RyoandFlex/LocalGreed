@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<p>Bienvenue</p>
+<p>{{app.user.firstname}} {{app.user.lastname}}</p>
+{% endblock %}
+
+{% block body1 %}
+    <a class="btn btn-outline-primary" href="{{ path('app_logout') }}" role="button">Se déconnecter</a>
+{% endblock %}
